@@ -1,0 +1,102 @@
+<section id ="services" class = "section">
+  <div id="services-wrap">
+    <h2 class ="service-header">Services</h2>
+    <div id = "slider-wrap">
+      <ul id = "slider">
+
+        <!-- Service Domain and Hosting-->
+        <li> 
+          <div class = "service">
+            <div class = "service-image">
+                  <%= image_tag 'service.png' %>
+            </div>
+            <div class = "service-details">
+              <div class="service-title">
+                 <h3>Domain and Hosting</h3>
+              </div>
+              <p>
+               Description about Domain and hosting. 
+              </p>
+              <div class="service-tags">
+                <span class="service-tag">Domain</span>
+                <span class="service-tag">Hosting</span>
+                <span class="service-tag">Solution</span>
+              </div>
+              <div class= "service-links">
+                <span class = "github-icon">
+                   <% link_to 'https://github.com/ageng' do %>
+                    <%= image_tag 'Octocat.jpg' %>
+                  <% end %>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </li>
+
+        <!-- Service No 2 -->
+        <li> 
+          <div class = "service">
+            <div class = "service-image">
+                  <%= image_tag 'service.png' %>
+            </div>
+            <div class = "service-details">
+              <div class="service-title">
+                 <h3>Software Development</h3>
+              </div>
+              <p>
+               Description about Software Development
+              </p>
+              <div class="service-tags">
+                <span class="service-tag">Ruby</span>
+                <span class="service-tag">Rails</span>
+                <span class="service-tag">Javascript</span>
+              </div>
+              <div class= "service-links">
+                <span class = "github-icon">
+                   <% link_to 'https://github.com/ageng' do %>
+                    <%= image_tag 'Octocat.jpg' %>
+                  <% end %>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </li>
+
+        <!-- Service No 3 -->
+        <li>
+          <div class = "service">
+            <div class = "service-image">
+                <%= image_tag 'service.png' %>
+            </div>  
+            <div class = "service-details">
+              <div class="service-title">
+                <h3>Web Development</h3>
+              </div>
+              <p>
+                Description about Web Development 
+              </p>
+              <div class= "service-tags">
+                <span class="service-tag">Ruby</span>
+                <span class="service-tag">Node.js</span>
+                <span class="service-tag">PHP</span>
+                <span class="service-tag">HTML5</span>
+              </div>
+              <div class= "service-links">
+                <span class = "github-icon">
+                   <% link_to 'https://github.com/ageng' do %>
+                    <%= image_tag 'Octocat.jpg' %>
+                  <% end %>
+                </span>
+              </div>
+            </div>   
+          </div>
+        </li>
+      </ul>
+    </div>  <!-- end slider wrap -->
+  </div>  <!-- end services wrap -->
+
+  <div id="slider-controls">
+      <a href="#" id="slider-prev"> <%= image_tag 'prev.png' %></a>
+      <a href="#" id="slider-next"><%= image_tag 'next.png' %></a>
+  </div>
+</section>
