@@ -1,0 +1,72 @@
+---
+layout: layout
+title: "Home"
+---
+  	<section id = "home" class = "section">
+  		<div id="home-wrap">
+	  		<div id = "home-image"> 
+          <%= image_tag 'profile9.jpg' %>
+	  		</div>
+	  		<div id = "home-intro">
+	  			<h1>Wellcome to Fosslink</h1>
+	  		
+		  		<p>Wellcome to Fosslink Solution Website, we are build with Open Source Platform.</p>
+		  	</div>
+		</div>
+  	</section>
+
+ 	<section id= "about" class = "section">
+ 		<div id="about-wrap">
+	 		<div id="about-details">
+		 		<h2>About </h2>
+				<p>
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+				</p>	
+					
+			</div>
+		</div>	
+	</section>
+
+  	<%= partial 'services' %>
+
+	<section id ="posts" class = "section">
+		<div id="posts-wrap">
+			<div id="post-list">
+
+			<h2> Posts</h2>
+			<span id="tumblr"> News From Fosslink </span>
+		    
+		    <ul>
+
+            <% blog.articles.each do |post| %>
+          <li class = "post-item">
+            <%= link_to(post.title, post.url)%>
+            <span class = "post-date"><%= post.date.strftime('%b %e, %Y') %></span>
+         </li>
+    
+           <% end %>
+
+		    </ul>
+		    
+		    </div> 
+		</div>
+	</section>
+
+	<section id ="contact" class = "section">
+  		<div id="contact-wrap">
+	  		<h2><a href="mailto:newbie.masih@hotmail.com?sqs_title=Contact Fosslink.">Get in touch, you can contact we.</a></h2>
+  		</div>
+  	</section>
+
+	<nav id ="home-nav">
+		<ul>
+      <li class = "social"><% link_to 'https://github.com/ageng/' do %> <%= image_tag 'github.png' %> <% end %>
+      </li>
+	  	<li><span class = "down-arrow"></span><a href = "#home" id= "home-link" class = "nav-link">Home</a></li>
+	  	<li><span class = "down-arrow"></span><a href = "#about" id= "about-link" class = "nav-link">About</a></li>
+			<li><span class = "down-arrow"></span><a href = "#services" id = "services-link" class = "nav-link" >Services</a></li>
+			<li><span class = "down-arrow"></span><a href = "#posts" id = "posts-link" class = "nav-link">Posts</a></li>
+			<li><span class = "down-arrow"></span><a href = "#contact" id= "contact-link" class = "nav-link">Contact</a></li>
+      <li class = "social"><% link_to 'https://twitter.com/ageng/' do %> <%= image_tag 'twitter.png' %> <% end %></li>
+    </ul>
+	</nav>
