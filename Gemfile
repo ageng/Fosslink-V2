@@ -6,7 +6,7 @@ gem "middleman-syntax", "~> 1.2.1"
 gem "redcarpet", "~> 3.0.0"
 gem "middleman-deploy", "~> 0.1.1"
 gem "middleman-disqus"
-#gem "wdm", "~>0.1.0" enable if you get error in windows
+gem "wdm", "~>0.1.0"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0.0"
